@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Secret Santa</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="container">
+      <div class="site-wrapper">
+        <div class="v-center text-center">
+          <h1 class="sacramento green title">Lorem Ipsum!</h1>
+          <div class="col-sm-3 col-sm-offset-3">
+            <div class="dp-container" style="width: 200px; height:200px; background white;">
+              <img class="dp img-responsive" src="images/dp.jpg" alt="dp">
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="dp-container rotate" style="width: 200px; height:200px; background white;">
+              <img class="dp img-responsive" src="images/dp2.jpg" alt="dp">
+            </div>
+          </div>
+          <div class=" col-sm-4 col-sm-offset-4" style="margin-top: 50px;">
+            <button class="btn main-btn btn-block">Pick a match</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="bower_components/blizzard-builder/canvas-snow.js"></script>
+      <script>
+
+        //Timeout is required as we have Masonry on the page positioning the images
+        setTimeout(function() {
+            var options = {
+                flakeDensity: .25,
+                fallingSpeed: .5
+            };
+            var falling = new Blizzard('container', options);
+        }, 100);
+    </script>
+    </script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/Lato/Lato-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../common/fonts/Lato/Lato-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'lato-light';
+  src: url('../fonts/Lato/Lato-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Lato/Lato-Light.woff')  format('woff');
+}
+
+@font-face {
+  font-family: 'lato-extra-light';
+  src: url('../fonts/Lato/Lato-ExtraLight.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Lato/Lato-ExtraLight.woff')  format('woff');
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 10px 32px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 32px -12px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 32px -12px rgba(0,0,0,0.75);
+}
+
+div#container {
+  height: 100%;
+  background: #13142a;
+}
+
+.ff-custom-btn {
+    
+    background: rgba(139,240,227,1);
+    background: -moz-linear-gradient(left, rgba(139,240,227,1) 0%, rgba(122,214,217,1) 50%, rgba(78,204,172,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(139,240,227,1)), color-stop(50%, rgba(122,214,217,1)), color-stop(100%, rgba(78,204,172,1)));
+    background: -webkit-linear-gradient(left, rgba(139,240,227,1) 0%, rgba(122,214,217,1) 50%, rgba(78,204,172,1) 100%);
+    background: -o-linear-gradient(left, rgba(139,240,227,1) 0%, rgba(122,214,217,1) 50%, rgba(78,204,172,1) 100%);
+    background: -ms-linear-gradient(left, rgba(139,240,227,1) 0%, rgba(122,214,217,1) 50%, rgba(78,204,172,1) 100%);
+    background: linear-gradient(to right, rgba(139,240,227,1) 0%, rgba(122,214,217,1) 50%, rgba(78,204,172,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bf0e3', endColorstr='#4eccac', GradientType=1 );
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 10px 32px -12px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 32px -12px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 32px -12px rgba(0,0,0,0.5);
+    transition: all .5s ease;
+}
+
+.ff-custom-btn:hover {
+  color: white;
+  -webkit-box-shadow: 0px 10px 32px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 32px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 32px -12px rgba(0,0,0,0.75);
+}
+
+.sacramento {
+/*  font-family: 'Sacramento', cursive;*/
+  font-family: 'Allura', cursive;
+}
+
+.white {
+  color: white;
+}
+
+
+.green {
+  color: #0a8171;
+}
+
+
+.title {
+  font-size: 50pt;
+}
+
+
+.custom-input, .form-group input:focus  {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: white;
+  font-family: lato-light;
+  border-bottom: 1px solid grey;
+  border-radius: 0;
+  margin-top: 0px;
+}
+
+.main-btn {
+  border-radius: 20px;
+  background: #0a8171;
+  color: white;
+}
+
+.main-btn:hover {
+  border-radius: 20px;
+  background: #257f89;
+  color: white;
+}
+
+p {
+  line-height: 2;
+}
+
+.lighter {
+  font-family: lato-extra-light;
+}
+
+.light {
+  font-family: lato-light;
+}
+
+.normal {
+  font-family: lato;
+}
+
+body,
+html{
+  height: 100%;
+  background: #ffffff;
+}
+
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+.v-center {
+  vertical-align: middle !important;
+  display: table-cell !important;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.dp {
+  display: block;
+  margin: 0 auto;
+  width: inherit;
+  
+}
+
+.dp-container {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 100px;
+  perspective: 100px;
+  transform: rotateY(0deg);
+}
+
+.gp-btn {
+  position: relative;
+  top: 40px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.rotate {
+  -webkit-animation: rotate 5s infinite;
+  perspective: '100px';
+  rotateY: '0deg';
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    perspective: 100px;
+    transform: rotateY(0deg);
+  }
+  100% {
+    perspective: 100px;
+    transform: rotateY(8100deg);
+  }
+}
